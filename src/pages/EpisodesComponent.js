@@ -1,8 +1,8 @@
 import { useState } from "react";
+import EpisodesList from "../components/EpisodesList";
 import HttpFetchEpisodes from "../hooks/HttpFetchEpisodes";
-import EpisodesList from "../components/HeroesList";
 
-const HttpEpisodeComponent = () => {
+const EpisodesComponent = () => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const { data, loading } = HttpFetchEpisodes(`episode?page=${currentPage}`);
@@ -26,4 +26,4 @@ const HttpEpisodeComponent = () => {
     </div>
 }
 
-export default HttpEpisodeComponent;
+export default EpisodesComponent;

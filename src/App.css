@@ -40,7 +40,8 @@
   }
 }
 
-.Hero-Card {
+.Hero-Card,
+.Episode-Card {
   width: 500px;
   height: 20px;
   display: flex;
@@ -73,31 +74,38 @@
   padding-left: 0;
 }
 
-.Home-Page li {
-  display: flex;
-  width: 22px;
-  height: 22px;
-  margin: 1px;
-  border-radius: 2px;
-  background: #1e2025;
-  color: #92a4b1;
-  font-size: 12px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.Home-Page button {
-  height: 22px;
-  width: 48px;
-  background: #29343d;
-  color: #92a4b1;
-  border: none;
-  border-radius: 2px;
+.Home-page {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
 }
 
 .Main-div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.Navigation {
+  padding: 10px;
+}
+
+.Hero {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #abded7;
+  text-align: center;
+}
+
+.Nav-item {
+  padding: 10px;
+  font-weight: 600;
+  color: #abded7;
+  text-decoration: none;
+}
+
+.Nav-item:hover,
+.Nav-item:focus {
+  color: #16e6ca;
 }

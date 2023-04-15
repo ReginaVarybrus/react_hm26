@@ -1,9 +1,9 @@
 const EpisodesCard = (props) => {
     return (
-        <div className="Hero-Card">
+        <div className="Episode-Card">
             {props.children}
         </div>
     )
 }
 
-export default EpisodesCard ;
+export default EpisodesCard;
